@@ -4,47 +4,99 @@
 .about{
 	color: white;
 	background-color: black;
+	font-family: 'Saira Condensed', sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 78px 0;
+	font-weight: 500;
+}
+
+.about img{
+	height: auto;
+	width: 500px;
+}
+
+.about__text{
+	width: 550px;
+}
+
+.about__text h1{
+	font-size: 80px;
+	text-transform: capitalize;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.about__text h5{
+	font-size: 80px;
+	font-size: 20px;
+	text-transform: capitalize;
+	font-weight: 300;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+.about__text p{
+	letter-spacing: 1px;
+	line-height: 20px;
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 45px;
+}
+
+.about__text button{
+	background: #f9004d;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s;
+	color: white;
+}
+
+.about__text button:hover{
+	background: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+.about__social{
 	display: flex;
+}
+
+.about__foto h1{
+	font-size: 30px;
+	text-transform: capitalize;
+	font-weight: 300;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.about__social img{
+	height: auto;
+	width: 75px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	opacity: 0.3;
+	transition: .3s;
+}
+
+.about__social img:hover{
+	opacity: 1;
+}
+
+.about__main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
 	justify-content: space-around;
 }
 
-
-.social-icons{
-	text-align: left;
-}
-
-
-.social-icons li{
-	display: inline-block;
-	list-style-type: none;
-}
-
-.social-icons li a {
-	border-bottom: none;
-}
-
-.social-icons li img {
-	width:70px;
-	height:70px;
-}
-
-.icons:hover{
-	opacity: 0.3;
-	transition: opacity .6s;
-}
-
-.content__aboutmore{
-	padding-right: 10rem;
-}
-
-
-
-.media__foto{
-	min-width: auto;
-	height: 500px;
-}
-
-.about__profession{
-	text-align: center;
-	font-size: 2rem;
+.about__text span{
+	color: #f9004d;
 }
