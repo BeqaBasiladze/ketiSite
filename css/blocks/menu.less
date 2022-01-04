@@ -1,31 +1,106 @@
 //main: ../style.less
 
 
-.menu{
-	margin: 0 auto;
-	padding: 0 auto;
+.burger-menu__button{
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 30;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: grey;
 }
 
-.menu__content{
+.burger-menu__button:hover .burger-menu__lines{
+	filter: brightness(0.7);
+}
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before{
+	position: absolute;
+	width: 30px;
+	height: 4px;
+	background-color: white;
+}
+
+.burger-menu__lines{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.burger-menu__lines::before{
+	content: '';
+	top: -12px;
+}
+
+.burger-menu__lines::after{
+	content: '';
+	top: 12px;
+}
+
+.burger-menu_active .burger-menu__lines{
+	background-color: transparent;
+}
+
+.burger-menu_active .burger-menu__lines::before{
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.burger-menu_active .burger-menu__lines::after{
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+
+.burger-menu__nav{
+	padding-top: 80px;
+	position: fixed;
+	z-index: 20;
 	display: flex;
-	justify-content: space-between;
+	flex-flow: column;
+	height: 100%;
+	background-color: grey;
+	overflow-y: auto;
+	left: -100%;
+	transition: left .8s;
 }
 
-.menu__item{
-	padding-right: 50px;
-	list-style-type: none;
-	
-	a{
-	color: fade(white,35%);
-	text-transform: uppercase;
+.burger-menu_active .burger-menu__nav{
+	left: 0;
+	transition: left .8s;
+}
+
+.burger-menu__link{
+	padding: 30px;
+	font-size: 25px;
+	font-family: sans-serif;
 	text-decoration: none;
-	}
+	list-style: none;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	color: white;
 }
 
-.menu__item:hover{
-	a{
-		color: white;
-		transition: color 1s;
-	}
+.burger-menu__link:hover{
+	text-shadow: 0 0px 15px white;
+	transition: text-shadow .6s;
 }
 
+.burger-menu__overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+}
+
+.burger-menu_active .burger-menu__overlay{
+	display: block;
+}
