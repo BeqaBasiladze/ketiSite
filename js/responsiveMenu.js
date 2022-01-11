@@ -15,9 +15,11 @@ function burgerMenu(selector) {
 	function toggleMenu() {
 		menu.toggleClass('burger-menu_active');
 		if (menu.hasClass('burger-menu_active')) {
-			$('body').css('overflow', 'hidden');
+			$('body').css('overflow', 'visible');
+			$('main').css('opacity', '0.4');
 		} else {
 			$('body').css('overflow', 'visible');
+			$('main').css('opacity', '1');
 		}
 	}
 }

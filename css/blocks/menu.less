@@ -1,10 +1,37 @@
 //main: ../style.less
 
 
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: local('Caviar Dreams'), local('CaviarDreams'), url('caviardreams.woff2') format('woff2'), url('caviardreams.woff') format('woff'), url('caviardreams.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: local('Caviar Dreams Italic'), local('CaviarDreams-Italic'), url('caviardreamsitalic.woff2') format('woff2'), url('caviardreamsitalic.woff') format('woff'), url('caviardreamsitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: local('Caviar Dreams Bold'), local('CaviarDreams-Bold'), url('caviardreamsbold.woff2') format('woff2'), url('caviardreamsbold.woff') format('woff'), url('caviardreamsbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: local('Caviar Dreams Bold Italic'), local('CaviarDreams-BoldItalic'), url('caviardreamsbolditalic.woff2') format('woff2'), url('caviardreamsbolditalic.woff') format('woff'), url('caviardreamsbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
 .burger-menu__button{
 	position: fixed;
 	top: 10px;
-	left: 10px;
+	right: 10px;
 	z-index: 30;
 	width: 40px;
 	height: 40px;
@@ -14,6 +41,8 @@
 
 .burger-menu__button:hover .burger-menu__lines{
 	filter: brightness(0.7);
+
+	
 }
 
 .burger-menu__lines,
@@ -21,7 +50,7 @@
 .burger-menu__lines::before{
 	position: absolute;
 	width: 20px;
-	height: 3px;
+	height: 2px;
 	background-color: white;
 }
 
@@ -40,6 +69,7 @@
 	content: '';
 	top: 8px;
 }
+
 
 .burger-menu_active .burger-menu__lines{
 	background-color: transparent;
@@ -64,20 +94,21 @@
 	flex-flow: column;
 	height: 100%;
 	background-color: grey;
-	overflow-y: auto;
-	left: -100%;
-	transition: left .8s;
+	overflow-y: hidden;
+	right: -100%;
+	transition: right .6s;
+	width: 250px;
 }
 
 .burger-menu_active .burger-menu__nav{
-	left: 0;
-	transition: left .8s;
+	right: 0;
+	transition: right .6s;
 }
 
 .burger-menu__link{
-	padding: 30px;
-	font-size: 16px;
-	font-family: sans-serif;
+	padding: 8px;
+	font-size: 11px;
+	font-family: 'Caviar Dreams';
 	text-decoration: none;
 	list-style: none;
 	text-transform: uppercase;
@@ -104,3 +135,4 @@
 .burger-menu_active .burger-menu__overlay{
 	display: block;
 }
+
