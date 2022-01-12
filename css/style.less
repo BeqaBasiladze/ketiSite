@@ -19,6 +19,30 @@ body,html {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+@media(max-width:1200px){
+	.container{
+		max-width: 970px;
+	}
+}
+
+@media(max-width:992px){
+	.container{
+		max-width: 750px;
+	}
+}
+
+@media(max-width:767px){
+	.container{
+		max-width: none;
+	}
+}
+
 
 h1,h2,h3,h4,h5,h6{
 	font-weight: inherit;
@@ -52,3 +76,4 @@ h1,h2,h3,h4,h5,h6{
 @import url(blocks/form.less);
 @import url(blocks/popup.less);
 @import url(blocks/footer.less);
+@import url(blocks/otherDisplay.less);

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="stylesheet" href="css/style.css">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,300&family=Saira+Condensed:wght@300;500;700&display=swap"
@@ -14,399 +14,426 @@
 
 <body>
 	<header class="header">
-		<div class="burger-menu ">
-			<a href="#" class="burger-menu__button">
-				<span class="burger-menu__lines"></span>
-			</a>
-			<nav id="burger" class="burger-menu__nav">
-				<a href="#" class="burger-menu__link">Home</a>
-				<a href="#works" class="burger-menu__link">Works</a>
-				<a href="#about" class="burger-menu__link">Abput me</a>
-				<a href="#contact_me" class="burger-menu__link">Hire me</a>
-			</nav>
-			<div class="burger-menu__overlay">
+		<div class="container">
+			<div class="burger-menu ">
+				<a href="#" class="burger-menu__button">
+					<span class="burger-menu__lines"></span>
+				</a>
+				<nav id="burger" class="burger-menu__nav">
+					<a href="#" class="burger-menu__link">Home</a>
+					<a href="#works" class="burger-menu__link">Works</a>
+					<a href="#about" class="burger-menu__link">Abput me</a>
+					<a href="#contact_me" class="burger-menu__link">Hire me</a>
+				</nav>
+				<div class="burger-menu__overlay">
+				</div>
 			</div>
 		</div>
 	</header>
 	<!--/.header-->
 
 	<main>
-		<div class="main">
-			<div class="logo">
-				<img class="logo__item" src="img/logo.png" alt="">
-			</div>
-			<div class="slider">
-				<div class="slider__item fade">
-					<div class="slider__numbertext"></div>
-					<img src="img/works/1.jpg" style="width: 100%;">
-					<div class="slider__text">HOLIDAYS HOUSE IN DAKAR </div>
+		<div class="container">
+			<div class="main">
+				<div class="logo">
+					<img class="logo__item" src="img/logo.png" alt="">
 				</div>
-				<div class="slider__item fade">
-					<div class="slider__numbertext"></div>
-					<img src="img/works/2.jpg" style="width: 100%;">
-					<div class="slider__text">Text</div>
+				<div class="slider">
+					<div class="slider__item fade">
+						<div class="slider__numbertext"></div>
+						<img src="img/works/1.jpg" style="width: 100%;">
+						<div class="slider__text">HOLIDAYS HOUSE IN DAKAR </div>
+					</div>
+					<div class="slider__item fade">
+						<div class="slider__numbertext"></div>
+						<img src="img/works/2.jpg" style="width: 100%;">
+						<div class="slider__text">Text</div>
+					</div>
+					<div class="slider__item fade">
+						<div class="slider__numbertext"></div>
+						<img src="img/works/3.png" style="width: 100%;">
+						<div class="slider__text">ZEN LIVING AT GARDA LAKE</div>
+					</div>
+					<div class="slider__item fade">
+						<div class="slider__numbertext"></div>
+						<img src="img/works/4.png" style="width: 100%;">
+						<div class="slider__text">Text</div>
+					</div>
+
+					<a class="slider__prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="slider__next" onclick="plusSlides(1)">&#10095;</a>
+
 				</div>
-				<div class="slider__item fade">
-					<div class="slider__numbertext"></div>
-					<img src="img/works/3.png" style="width: 100%;">
-					<div class="slider__text">ZEN LIVING AT GARDA LAKE</div>
-				</div>
-				<div class="slider__item fade">
-					<div class="slider__numbertext"></div>
-					<img src="img/works/4.png" style="width: 100%;">
-					<div class="slider__text">Text</div>
+				<br>
+
+				<div class="slider__dots" style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
 				</div>
 
-				<a class="slider__prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="slider__next" onclick="plusSlides(1)">&#10095;</a>
-
+				<div id="works" class="works">
+					<div class="works__title">
+						<h1>
+						</h1>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/1.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							RESIDENTIAL DESIGN
+						</div>
+						<div class="grid__text--text">
+							HOLIDAYS HOUSE IN DAKAR
+						</div>
+						<div class="grid__text--text">
+							2021
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/2.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/3.png" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							RESIDENTIAL DESIGN
+						</div>
+						<div class="grid__text--text">
+							ZEN LIVING AT GARDA LAKE
+						</div>
+						<div class="grid__text--text">
+							2021
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/4.png" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/5.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/6.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/7.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/8.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2021
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/9.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2021
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/10.png" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							RESIDENTIAL DESIGN
+						</div>
+						<div class="grid__text--text">
+							APARTMENT IN CEREA (VERONA)
+						</div>
+						<div class="grid__text--text">
+							2021
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/11.png" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							RESIDENTIAL DESIGN
+						</div>
+						<div class="grid__text--text">
+							APARTMENT IN CEREA (VERONA)
+						</div>
+						<div class="grid__text--text">
+							2021
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/12.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/13.png" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/14.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/15.jpg" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__item">
+							<img id="myImg" class="grid__img" src="img/works/16.png" alt="">
+						</div>
+						<div class="grid__line"></div>
+						<div class="grid__text">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="grid__text--text">
+							Lorem, ipsum dolor.
+						</div>
+						<div class="grid__text--text">
+							2020
+						</div>
+					</div>
+				</div>
 			</div>
-			<br>
 
-			<div class="slider__dots" style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-				<span class="dot" onclick="currentSlide(3)"></span>
-				<span class="dot" onclick="currentSlide(4)"></span>
+			<div class="popup__image">
+				<span class="close__cursor">&times;</span>
+				<img src="img/works/1.jpg" alt="">
 			</div>
 
-			<div id="works" class="works">
-				<div class="works__title">
-					<h1>
-					</h1>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/1.jpg" alt="">
+
+			<section id="about" class="about">
+				<div class="about__main">
+					<div class="about__text">
+						<h5>Hello I am</h5>
+						<h1>Keti Diakonidze</h1>
+						<div class="about__social">
+							<a href="https://www.behance.net/ketydiakodesign/projects">
+								<img src="img/SocialLogo/behance_3.svg" alt="">
+							</a>
+							<a href="https://www.instagram.com/ketydiakodesign/">
+								<img src="img/SocialLogo/instagram_2.svg" alt="">
+							</a>
+						</div>
+						<p>
+							<span>Keti Diakonidze</span> <br>
+							Originally from Moscow, Russia, Keti Diakonidze studied interior design and graphic design
+							at
+							Istituto Design Palladio in Verona. As
+							a designer, she's feed on art and new ideas. Moreover, Keti Diakonidze, starts each project
+							by
+							creating a strong connection with the
+							client that will interact with her designs, establishing the “focal elements and point”. For
+							her
+							is
+							very important to think spaces or objects in
+							relation to people. Keti Diakonidze has worked for Brandless Studio, Edilvetta and she
+							collaborates
+							with several architects of Verona. <br> <br>
+							<span>Prizes and Awards</span> <br>
+							She has won the Silver Prize of MM Award 2021. <br> <br>
+							<span>Languages</span> <br>
+							You can contact her from anywhere in the world because she speaks and understands six
+							different
+							languages icluding russian, german,
+							spanish, georgian, italian and of coure, english. This because she aspires to work at an
+							international level without borders and limits.
+						</p>
+						<a href="#contact_me">
+							<button type="button">Let's Talk</button>
+						</a>
 					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/2.jpg" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/3.png" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/4.png" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
+					<div class="about__foto">
+						<img src="img/fotoPresentation.png" alt="">
+						<h1>Interior and Graphic Designer</h1>
+
+						<div class="award__logo">
+							<img src="img/4AE94BE62E8B40D9B4EC1FEBF48C5E44.png" alt="">
+						</div>
 					</div>
 				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/5.jpg" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/6.jpg" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/7.jpg" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/8.jpg" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/9.jpg" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/10.png" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/11.png" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/12.jpg" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/13.png" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/14.jpg" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/15.jpg" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__item">
-						<img id="myImg" class="grid__img" src="img/works/16.png" alt="">
-					</div>
-					<div class="grid__text">
-						Lorem ipsum dolor sit amet.
-					</div>
-					<div class="grid__text--text">
-						Lorem, ipsum dolor.
-					</div>
-					<div class="grid__text--text">
-						2020
-					</div>
-				</div>
-			</div>
+			</section>
 		</div>
 
-		<div class="popup__image">
-			<span class="close__cursor">&times;</span>
-			<img src="img/works/1.jpg" alt="">
+
+		<div class="container">
+			<section id="contact_me">
+				<div class="contactme-form">
+					<div class="form">
+						<form action="#" id="form" class="form__body">
+							<h1 class="form__title">Contact me</h1>
+							<div class="form__item">
+								<label for="formName" class="form__label">Name*:</label>
+								<input class="form__input _req" type="text" name="name" id="formName">
+							</div>
+							<div class="form__item">
+								<label for="formEmail" class="form__label">Email*:</label>
+								<input class="form__input _req" type="text" name="email" id="formEmail">
+							</div>
+							<div class="form__item">
+								<div class="form__label">Gender:</div>
+								<div class="options">
+									<div class="options__item">
+										<input id="formMale" checked type="radio" value="male" name="gender"
+											class="options__input">
+										<label for="formMale" class="options__label"><span>Male</span></label>
+									</div>
+									<div class="options__item">
+										<input id="formFemale" type="radio" value="female" name="gender"
+											class="options__input">
+										<label for="formFemale" class="options__label"><span>Female</span></label>
+									</div>
+									<div class="options__item">
+										<input id="formOther" type="radio" value="other" name="gender"
+											class="options__input">
+										<label for="formOther" class="options__label"><span>Other</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="form__item">
+								<label for="formMessage" class="form__label">Message</label>
+								<textarea name="message" id="formMessage" class="form__input"></textarea>
+							</div>
+
+							<div class="form__item">
+								<div class="checkbox">
+									<input id="formAgreement" checked type="checkbox" name="agreement"
+										class="checkbox__input _req">
+									<label for="formAgreement" class="checkbox__label">I agree to the terms of
+										service</label>
+								</div>
+							</div>
+							<button type="submit" class="form__button">Send</button>
+						</form>
+					</div>
+				</div>
+			</section>
 		</div>
-
-
-		<section id="about" class="about">
-			<div class="about__main">
-				<div class="about__text">
-					<h5>Hello I am</h5>
-					<h1>Keti Diakonidze</h1>
-					<div class="about__social">
-						<a href="https://www.behance.net/ketydiakodesign/projects">
-							<img src="img/SocialLogo/behance_2.svg" alt="">
-						</a>
-						<a href="https://www.instagram.com/ketydiakodesign/">
-							<img src="img/SocialLogo/instagram_2.svg" alt="">
-						</a>
-					</div>
-					<p>
-						<span>Keti Diakonidze</span> <br>
-						Originally from Moscow, Russia, Keti Diakonidze studied interior design and graphic design at
-						Istituto Design Palladio in Verona. As
-						a designer, she's feed on art and new ideas. Moreover, Keti Diakonidze, starts each project by
-						creating a strong connection with the
-						client that will interact with her designs, establishing the “focal elements and point”. For her
-						is
-						very important to think spaces or objects in
-						relation to people. Keti Diakonidze has worked for Brandless Studio, Edilvetta and she
-						collaborates
-						with several architects of Verona. <br> <br>
-						<span>Prizes and Awards</span> <br>
-						She has won the Silver Prize of MM Award 2021. <br> <br>
-						<span>Languages</span> <br>
-						You can contact her from anywhere in the world because she speaks and understands six different
-						languages icluding russian, german,
-						spanish, georgian, italian and of coure, english. This because she aspires to work at an
-						international level without borders and limits.
-					</p>
-					<a href="#contact_me">
-						<button type="button">Let's Talk</button>
-					</a>
-				</div>
-				<div class="about__foto">
-					<img src="img/fotoPresentation.png" alt="">
-					<h1>Interior and Graphic Designer</h1>
-
-					<div class="award__logo">
-						<img src="img/4AE94BE62E8B40D9B4EC1FEBF48C5E44.png" alt="">
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="contact_me">
-			<div class="contactme-form">
-				<div class="form">
-					<form action="#" id="form" class="form__body">
-						<h1 class="form__title">Contact me</h1>
-						<div class="form__item">
-							<label for="formName" class="form__label">Name*:</label>
-							<input class="form__input _req" type="text" name="name" id="formName">
-						</div>
-						<div class="form__item">
-							<label for="formEmail" class="form__label">Email*:</label>
-							<input class="form__input _req" type="text" name="email" id="formEmail">
-						</div>
-						<div class="form__item">
-							<div class="form__label">Gender:</div>
-							<div class="options">
-								<div class="options__item">
-									<input id="formMale" checked type="radio" value="male" name="gender"
-										class="options__input">
-									<label for="formMale" class="options__label"><span>Male</span></label>
-								</div>
-								<div class="options__item">
-									<input id="formFemale" type="radio" value="female" name="gender"
-										class="options__input">
-									<label for="formFemale" class="options__label"><span>Female</span></label>
-								</div>
-								<div class="options__item">
-									<input id="formOther" type="radio" value="other" name="gender"
-										class="options__input">
-									<label for="formOther" class="options__label"><span>Other</span></label>
-								</div>
-							</div>
-						</div>
-						<div class="form__item">
-							<label for="formMessage" class="form__label">Message</label>
-							<textarea name="message" id="formMessage" class="form__input"></textarea>
-						</div>
-
-						<div class="form__item">
-							<div class="checkbox">
-								<input id="formAgreement" checked type="checkbox" name="agreement"
-									class="checkbox__input _req">
-								<label for="formAgreement" class="checkbox__label">I agree to the terms of
-									service</label>
-							</div>
-						</div>
-						<button type="submit" class="form__button">Send</button>
-					</form>
-				</div>
-			</div>
-		</section>
 	</main>
 
 
@@ -414,7 +441,7 @@
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="footer__col">
+				<div id="first__column" class="footer__col">
 					<ul>
 						<li>
 							<a href="#">Home</a>
@@ -444,10 +471,10 @@
 				<div class="footer__col">
 					<h4>Social</h4>
 					<div class="social__links">
-						<a href="#">
-							<img src="img/SocialLogo/behance_2.svg" alt="">
+						<a href="https://www.behance.net/ketydiakodesign/projects">
+							<img src="img/SocialLogo/behance_3.svg" alt="">
 						</a>
-						<a href="#">
+						<a href="https://www.instagram.com/ketydiakodesign/">
 							<img src="img/SocialLogo/instagram_2.svg" alt="">
 						</a>
 					</div>

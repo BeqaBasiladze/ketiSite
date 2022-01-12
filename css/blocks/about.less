@@ -11,16 +11,23 @@
 }
 
 .about__foto img{
-	height: auto;
-	width: 545px;
+	height: 100%;
+	max-width: 100%;
 	padding-left: 50px;
 	position: relative;
 	top: 60px;
 }
 
+@media(max-width:945px){
+	.about__foto img{
+		padding-left: 0;
+	}
+}
+
+
+
 .about__text{
 	width: 550px;
-	padding-right: 100px;
 	text-align: justify;
 }
 
@@ -75,17 +82,27 @@
 	font-weight: 300;
 	margin-bottom: 20px;
 	position: relative;
-	justify-content: center;
 	margin-top: 50px;
-	left: 100px;
+	padding-left: 150px;
 	top: 30px;
 }
+
+@media(max-width:945px){
+	.about__foto h1{
+		display: flex;
+		justify-content: center;
+		padding-left: 0px;
+	}
+}
+
+
+
 
 .about__social img{
 	height: auto;
 	width: 65px;
 	padding-left: 20px;
-	margin-bottom: 20px;
+	padding-bottom: 10px;
 	opacity: 0.3;
 	transition: .3s;
 }
@@ -100,7 +117,14 @@
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+}
+
+@media(max-width:945px){
+	.about__main{
+	display: flex;
+	flex-wrap: wrap;
+	}
 }
 
 .about__text span{
@@ -112,9 +136,15 @@
 
 .award__logo img{
 	position: relative;
-	width: 200px;
+	max-width: 200px;
 	height: 15 0px;
 	z-index: 5;
-	left: 420px;
-	top: -600px;
+	left: 575px;
+	top: -740px;
+}
+
+@media(max-width:1168px){
+	.award__logo img{
+		display: none;
+	}
 }
